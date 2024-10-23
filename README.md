@@ -35,7 +35,7 @@ Ensure you have the following installed on your system:
 ### Installation
 1. Clone the repository to your local machine:
 ```bash
-$ git clone https://github.com/KTKarthick006/Ticket-booking-website.git
+$ git clone https://github.com/IEEE-VIT/Ticket-Booking-Portal.git
 ```
 
 2. Navigate into the backend directory:
@@ -81,4 +81,4 @@ The project is organized into the following key directories and files:
 To start contributing, check out [CONTRIBUTING.md](https://github.com/KTKarthick006/Ticket-booking-website/blob/main/CONTRIBUTING.md). New contributors are always welcome to support this project. Check out issues labelled as `Hacktoberfest` if you are up for some grabs! :)
 
 ## License
-This project is licensed under [MIT]()
+This project is licensed under [MIT](https://github.com/IEEE-VIT/Ticket-Booking-Portal/blob/main/LICENSE)

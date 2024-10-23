@@ -1,6 +1,6 @@
 ## 🫱🏼‍🫲🏻 Contributing
 
-We welcome contributions to enhance Bookaflix!! To contribute:
+We welcome contributions to enhance Ticketease!! To contribute:
 
 **Note:** To assign the issue to yourself type `.take` in the comment on the issue.
 

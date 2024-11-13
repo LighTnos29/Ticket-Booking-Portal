@@ -5,6 +5,12 @@ import './config/Auth.js';
 import passport from 'passport';
 import sessionMiddleware from './middleware/sessionMiddleware.js';
 import { isAuth } from './middleware/isAuth.js';
+// Import Router
+import userRouter from './routes/User.js';
+import movieRouter from './routes/Movie.js';
+import theaterRouter from './routes/Theater.js';
+import screenRouter from './routes/Screen.js';
+import bookingRouter from './routes/Booking.js';
 
 const app = express();
 
@@ -18,18 +24,13 @@ app.use(sessionMiddleware);
 app.use(passport.initialize()); 
 app.use(passport.session()); 
 
-// Import Router
-import userRouter from './routes/User.js';
-import movieRouter from './routes/Movie.js';
-import theaterRouter from './routes/Theater.js';
-import screenRouter from './routes/Screen.js';
-import bookingRouter from './routes/Booking.js';
 
-app.use('/api/', userRouter);
-app.use('/api/', movieRouter);
-app.use('/api/', theaterRouter);
-app.use('/api/', screenRouter);
-app.use('/api/', bookingRouter);
+
+app.use('/api/user', userRouter);
+app.use('/api/movie', movieRouter);
+app.use('/api/theater', theaterRouter);
+app.use('/api/screen', screenRouter);
+app.use('/api/booking', bookingRouter);
 
 app.get('/', isAuth, (req, res) => {
     res.send('Ticket Booking Website');
